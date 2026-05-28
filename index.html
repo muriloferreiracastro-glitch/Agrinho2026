@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agrinho 2026 - Plataforma de educação ambiental e sustentabilidade">
+    <title>Agrinho 2026 - Sustentabilidade</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🌱 Agrinho 2026</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#temas">Temas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Sustentabilidade para o Futuro</h1>
+            <p>Educação ambiental e práticas sustentáveis para um planeta melhor</p>
+            <button class="btn-primary" onclick="document.querySelector('#sobre').scrollIntoView()">Saiba Mais</button>
+        </div>
+    </header>
+
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2>Sobre o Agrinho 2026</h2>
+            <p>Uma iniciativa educacional dedicada à conscientização sobre sustentabilidade e responsabilidade ambiental. Unindo tecnologia, educação e ação para criar um impacto positivo.</p>
+        </div>
+    </section>
+
+    <section id="temas" class="themes">
+        <div class="container">
+            <h2>Temas Principais</h2>
+            <div class="cards-grid" id="temas-container"></div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form id="contact-form" class="contact-form">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu email" required>
+                <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                <button type="submit" class="btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Agrinho. Todos os direitos reservados. | Sustentabilidade é ação!</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

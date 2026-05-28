@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Random Joke Generator - Get a laugh with random jokes from an external API">
+    <title>😂 Random Joke Generator</title>
+    <link rel="stylesheet" href="styles/joke-generator.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>😂 Random Joke Generator</h1>
+            <p>Get a random laugh every time!</p>
+        </header>
+
+        <main class="main-content">
+            <!-- Joke Display -->
+            <div class="joke-card" id="jokeCard">
+                <div class="joke-content">
+                    <p id="jokeText" class="joke-text">Click the button to get a joke!</p>
+                    <p id="jokeType" class="joke-type"></p>
+                </div>
+                <div class="joke-meta">
+                    <span id="jokeId" class="joke-id"></span>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <button id="newJokeBtn" class="btn btn-primary">
+                    <span class="btn-icon">🎲</span> Get New Joke
+                </button>
+                <button id="shareBtn" class="btn btn-secondary" disabled>
+                    <span class="btn-icon">📢</span> Share
+                </button>
+                <button id="copyBtn" class="btn btn-secondary" disabled>
+                    <span class="btn-icon">📋</span> Copy
+                </button>
+            </div>
+
+            <!-- Joke Type Filter -->
+            <div class="filter-section">
+                <label for="jokeTypeFilter">Filter by type:</label>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-type="all">All</button>
+                    <button class="filter-btn" data-type="general">General</button>
+                    <button class="filter-btn" data-type="programming">Programming</button>
+                    <button class="filter-btn" data-type="knock-knock">Knock-Knock</button>
+                </div>
+            </div>
+
+            <!-- Loading Spinner -->
+            <div id="loadingSpinner" class="spinner hidden">
+                <div class="spinner-circle"></div>
+                <p>Loading joke...</p>
+            </div>
+
+            <!-- History Section -->
+            <div class="history-section">
+                <h2>📖 Joke History</h2>
+                <div id="jokeHistory" class="joke-history">
+                    <p class="empty-message">No jokes yet. Generate some!</p>
+                </div>
+                <button id="clearHistoryBtn" class="btn btn-outline" disabled>Clear History</button>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Powered by <a href="https://official-joke-api.appspot.com/" target="_blank">Official Joke API</a> | Made with ❤️</p>
+        </footer>
+    </div>
+
+    <script src="js/joke-generator.js"></script>
+</body>
+</html>
